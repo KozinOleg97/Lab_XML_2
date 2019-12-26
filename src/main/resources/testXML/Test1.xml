@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<university universityName="str1234">
+<university
+        xmlns="http://example.com/"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://example.com/ TestXSD.xsd"
+        universityName="str1234">
     <administration>
         <departmentName>str1234</departmentName>
         <boss>

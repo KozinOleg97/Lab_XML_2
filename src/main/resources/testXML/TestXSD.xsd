@@ -2,7 +2,8 @@
 
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
            targetNamespace="http://example.com/"
-           xmlns="http://example.com/">
+           xmlns="http://example.com/"
+           elementFormDefault="qualified">
 
 
     <xs:complexType name="man">
@@ -111,7 +112,6 @@
                     <xs:sequence>
                         <xs:element name="book" type="book"/>
                     </xs:sequence>
-                    <xs:element name="dataBase" type="xs:string"/>
                 </xs:choice>
             </xs:extension>
         </xs:complexContent>

@@ -13,19 +13,13 @@ public class Main {
 
     public static void main(String[] args) throws ParserConfigurationException, IOException, SAXException, JAXBException {
 
-        //////////DOM DEMO////////////////////////
-        DOMElem dom = new DOMElem("src/main/resources/testXML/Test1.xml");
-        dom.randomizeNames();
-        dom.save("src/main/resources/testXML/2.xml");
+        LabInterface lab = new LabInterface(
+                "src\\main\\resources\\testXML\\TestXSD.xsd",
+                "src\\main\\resources\\testXML\\NewGen.xml",
+                "src\\main\\resources\\testXML\\New_1.xml");
 
-        ////////XSD Validation//////////////////////////////////////////////////
-        XMLByXSDValidator validator = new XMLByXSDValidator();
-        System.out.println(validator.checkByXSD("src/main/resources/testXML/TestXSD.xsd", "src/main/resources/testXML/2.xml"));
-
-        //////////SAX DEMO//////////////////////////////////////////
-        //MySAXHandler mySaxHandler = new MySAXHandler();
-        //MySAXParser mySAXParser = new MySAXParser();
-        //mySAXParser.parse("resources\\testXML\\2.xml", mySaxHandler);
+        lab.doValidation();
+        lab.doJAXB("student.xml");
 
         ///////////JAXB DEMO///////////////////////
         //JAXBParser jaxbParser = new JAXBParser("resources\\testXML\\3.xml");

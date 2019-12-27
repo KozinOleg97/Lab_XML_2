@@ -446,3 +446,23 @@ org.xml.sax.SAXParseException; systemId: file:/home/denis/IntelliJIDEAProjects/L
 2019-12-27 16:08:21 INFO  XMLByXSDValidator:37 - Validation succeed
 2019-12-27 16:08:22 INFO  XMLByXSDValidator:37 - Validation succeed
 2019-12-27 16:14:41 INFO  XMLByXSDValidator:134 - Changed 0 nodes
+2019-12-27 16:20:47 INFO  XMLByXSDValidator:134 - Changed 0 nodes
+2019-12-27 16:21:02 INFO  XMLByXSDValidator:134 - Changed 0 nodes
+2019-12-27 16:21:14 INFO  XMLByXSDValidator:134 - Changed 0 nodes
+2019-12-27 16:26:06 INFO  XMLByXSDValidator:134 - Changed 0 nodes
+2019-12-27 16:26:50 INFO  XMLByXSDValidator:137 - Changed 0 nodes
+2019-12-27 16:27:04 INFO  XMLByXSDValidator:135 - Changed 0 nodes
+2019-12-27 16:27:57 INFO  XMLByXSDValidator:137 - Changed 0 nodes
+2019-12-27 16:29:00 INFO  XMLByXSDValidator:138 - Changed 0 nodes
+2019-12-27 16:31:36 INFO  XMLByXSDValidator:138 - Changed 0 nodes
+2019-12-27 16:33:35 INFO  XMLByXSDValidator:138 - Changed 0 nodes
+2019-12-27 16:34:08 INFO  XMLByXSDValidator:139 - Changed 144 nodes
+2019-12-27 16:35:39 INFO  XMLByXSDValidator:139 - Changed 144 nodes
+2019-12-27 16:35:39 INFO  XMLByXSDValidator:37 - Validation succeed
+2019-12-27 16:35:40 INFO  XMLByXSDValidator:37 - Validation succeed
+2019-12-27 16:37:52 INFO  XMLByXSDValidator:139 - Changed 144 nodes
+2019-12-27 16:37:53 INFO  XMLByXSDValidator:37 - Validation succeed
+2019-12-27 16:37:53 INFO  XMLByXSDValidator:37 - Validation succeed
+2019-12-27 16:40:51 INFO  XMLByXSDValidator:139 - Changed 144 nodes
+2019-12-27 16:40:51 INFO  XMLByXSDValidator:37 - Validation succeed
+2019-12-27 16:40:51 INFO  XMLByXSDValidator:37 - Validation succeed

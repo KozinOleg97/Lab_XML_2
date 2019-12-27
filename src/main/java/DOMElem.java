@@ -107,7 +107,12 @@ public class DOMElem {
     public void randomizeNames() {
 
         int cnt =0;
+        String ns = DOMDoc.getNamespaceURI();
+        /*NodeList nodeList = DOMDoc.getElementsByTagNameNS(
+                "http://lab.kozin.rsatu.ru/",
+                "*");*/
         NodeList nodeList = DOMDoc.getElementsByTagName("*");
+
         for (int i = 0; i < nodeList.getLength(); i++) {
             Node node = nodeList.item(i);
             if (node.getNodeType() == Node.ELEMENT_NODE) {

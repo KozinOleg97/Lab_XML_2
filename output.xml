@@ -1,7 +1,7 @@
-<university universityName="string" xmlns:exam="http://example.com/">
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<university xmlns="http://lab.kozin.rsatu.ru/" universityName="New Name!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!">
     <administration>
         <departmentName>string</departmentName>
-        <!--1 to 5 repetitions:-->
         <boss>
             <name>string</name>
             <surname>string</surname>
@@ -11,7 +11,6 @@
                 <docID>201</docID>
             </employeeDoc>
         </boss>
-        <!--1 to 500 repetitions:-->
         <departmentEmployee>
             <name>string</name>
             <surname>string</surname>
@@ -23,7 +22,6 @@
         </departmentEmployee>
         <bookkeeping>
             <departmentName>string</departmentName>
-            <!--1 to 5 repetitions:-->
             <boss>
                 <name>string</name>
                 <surname>string</surname>
@@ -33,7 +31,6 @@
                     <docID>201</docID>
                 </employeeDoc>
             </boss>
-            <!--1 to 500 repetitions:-->
             <departmentEmployee>
                 <name>string</name>
                 <surname>string</surname>
@@ -46,7 +43,6 @@
         </bookkeeping>
         <departmentOfScientific>
             <departmentName>string</departmentName>
-            <!--1 to 5 repetitions:-->
             <boss>
                 <name>string</name>
                 <surname>string</surname>
@@ -56,7 +52,6 @@
                     <docID>201</docID>
                 </employeeDoc>
             </boss>
-            <!--1 to 500 repetitions:-->
             <departmentEmployee>
                 <name>string</name>
                 <surname>string</surname>
@@ -68,7 +63,6 @@
             </departmentEmployee>
             <library>
                 <departmentName>string</departmentName>
-                <!--1 to 5 repetitions:-->
                 <boss>
                     <name>string</name>
                     <surname>string</surname>
@@ -78,7 +72,6 @@
                         <docID>201</docID>
                     </employeeDoc>
                 </boss>
-                <!--1 to 500 repetitions:-->
                 <departmentEmployee>
                     <name>string</name>
                     <surname>string</surname>
@@ -141,7 +134,6 @@
             </library>
             <educationalMethodicalDepartment>
                 <departmentName>string</departmentName>
-                <!--1 to 5 repetitions:-->
                 <boss>
                     <name>string</name>
                     <surname>string</surname>
@@ -151,7 +143,6 @@
                         <docID>201</docID>
                     </employeeDoc>
                 </boss>
-                <!--1 to 500 repetitions:-->
                 <departmentEmployee>
                     <name>string</name>
                     <surname>string</surname>
@@ -162,7 +153,6 @@
                     </employeeDoc>
                 </departmentEmployee>
             </educationalMethodicalDepartment>
-            <!--2 to 50 repetitions:-->
             <faculty>
                 <facultyName>string</facultyName>
                 <dean>
@@ -185,7 +175,6 @@
                             <docID>201</docID>
                         </employeeDoc>
                     </headTeacher>
-                    <!--2 to 50 repetitions:-->
                     <teacher>
                         <name>string</name>
                         <surname>string</surname>
@@ -204,7 +193,6 @@
                             <docID>201</docID>
                         </employeeDoc>
                     </teacher>
-                    <!--2 to 50 repetitions:-->
                     <group>
                         <groupName>string</groupName>
                         <year>2015+03:00</year>
@@ -214,17 +202,16 @@
                             <patronim>string</patronim>
                             <dateOfBirth>2018-07-19+03:00</dateOfBirth>
                             <studentDoc>
-                                <docID>201</docID>
+<docID>201</docID>
                             </studentDoc>
                         </starosta>
-                        <!--5 to 70 repetitions:-->
                         <students>
                             <name>string</name>
                             <surname>string</surname>
                             <patronim>string</patronim>
                             <dateOfBirth>2004-12-06+03:00</dateOfBirth>
                             <studentDoc>
-                                <docID>201</docID>
+<docID>201</docID>
                             </studentDoc>
                         </students>
                         <students>
@@ -233,7 +220,7 @@
                             <patronim>string</patronim>
                             <dateOfBirth>2006-12-05</dateOfBirth>
                             <studentDoc>
-                                <docID>201</docID>
+<docID>201</docID>
                             </studentDoc>
                         </students>
                         <students>
@@ -242,7 +229,7 @@
                             <patronim>string</patronim>
                             <dateOfBirth>2016-09-11</dateOfBirth>
                             <studentDoc>
-                                <docID>201</docID>
+<docID>201</docID>
                             </studentDoc>
                         </students>
                         <students>
@@ -251,7 +238,7 @@
                             <patronim>string</patronim>
                             <dateOfBirth>2005-02-02</dateOfBirth>
                             <studentDoc>
-                                <docID>201</docID>
+<docID>201</docID>
                             </studentDoc>
                         </students>
                         <students>
@@ -260,7 +247,7 @@
                             <patronim>string</patronim>
                             <dateOfBirth>2016-10-07+03:00</dateOfBirth>
                             <studentDoc>
-                                <docID>201</docID>
+<docID>201</docID>
                             </studentDoc>
                         </students>
                     </group>
@@ -273,17 +260,16 @@
                             <patronim>string</patronim>
                             <dateOfBirth>2011-11-03</dateOfBirth>
                             <studentDoc>
-                                <docID>201</docID>
+<docID>201</docID>
                             </studentDoc>
                         </starosta>
-                        <!--5 to 70 repetitions:-->
                         <students>
                             <name>string</name>
                             <surname>string</surname>
                             <patronim>string</patronim>
                             <dateOfBirth>2008-08-28+04:00</dateOfBirth>
                             <studentDoc>
-                                <docID>201</docID>
+<docID>201</docID>
                             </studentDoc>
                         </students>
                         <students>
@@ -292,7 +278,7 @@
                             <patronim>string</patronim>
                             <dateOfBirth>2008-11-07+03:00</dateOfBirth>
                             <studentDoc>
-                                <docID>201</docID>
+<docID>201</docID>
                             </studentDoc>
                         </students>
                         <students>
@@ -301,7 +287,7 @@
                             <patronim>string</patronim>
                             <dateOfBirth>2019-05-04</dateOfBirth>
                             <studentDoc>
-                                <docID>201</docID>
+<docID>201</docID>
                             </studentDoc>
                         </students>
                         <students>
@@ -310,7 +296,7 @@
                             <patronim>string</patronim>
                             <dateOfBirth>2010-04-24+04:00</dateOfBirth>
                             <studentDoc>
-                                <docID>201</docID>
+<docID>201</docID>
                             </studentDoc>
                         </students>
                         <students>
@@ -319,7 +305,7 @@
                             <patronim>string</patronim>
                             <dateOfBirth>2014-07-21+04:00</dateOfBirth>
                             <studentDoc>
-                                <docID>201</docID>
+<docID>201</docID>
                             </studentDoc>
                         </students>
                     </group>
@@ -347,7 +333,6 @@
                             <docID>201</docID>
                         </employeeDoc>
                     </headTeacher>
-                    <!--2 to 50 repetitions:-->
                     <teacher>
                         <name>string</name>
                         <surname>string</surname>
@@ -366,7 +351,6 @@
                             <docID>201</docID>
                         </employeeDoc>
                     </teacher>
-                    <!--2 to 50 repetitions:-->
                     <group>
                         <groupName>string</groupName>
                         <year>2003+03:00</year>
@@ -376,17 +360,16 @@
                             <patronim>string</patronim>
                             <dateOfBirth>2007-06-23+04:00</dateOfBirth>
                             <studentDoc>
-                                <docID>201</docID>
+<docID>201</docID>
                             </studentDoc>
                         </starosta>
-                        <!--5 to 70 repetitions:-->
                         <students>
                             <name>string</name>
                             <surname>string</surname>
                             <patronim>string</patronim>
                             <dateOfBirth>2013-11-24+04:00</dateOfBirth>
                             <studentDoc>
-                                <docID>201</docID>
+<docID>201</docID>
                             </studentDoc>
                         </students>
                         <students>
@@ -395,7 +378,7 @@
                             <patronim>string</patronim>
                             <dateOfBirth>2017-03-08</dateOfBirth>
                             <studentDoc>
-                                <docID>201</docID>
+<docID>201</docID>
                             </studentDoc>
                         </students>
                         <students>
@@ -404,7 +387,7 @@
                             <patronim>string</patronim>
                             <dateOfBirth>2009-06-10</dateOfBirth>
                             <studentDoc>
-                                <docID>201</docID>
+<docID>201</docID>
                             </studentDoc>
                         </students>
                         <students>
@@ -413,7 +396,7 @@
                             <patronim>string</patronim>
                             <dateOfBirth>2010-04-17+04:00</dateOfBirth>
                             <studentDoc>
-                                <docID>201</docID>
+<docID>201</docID>
                             </studentDoc>
                         </students>
                         <students>
@@ -422,7 +405,7 @@
                             <patronim>string</patronim>
                             <dateOfBirth>2016-10-25+03:00</dateOfBirth>
                             <studentDoc>
-                                <docID>201</docID>
+<docID>201</docID>
                             </studentDoc>
                         </students>
                     </group>
@@ -435,17 +418,16 @@
                             <patronim>string</patronim>
                             <dateOfBirth>2011-09-24+04:00</dateOfBirth>
                             <studentDoc>
-                                <docID>201</docID>
+<docID>201</docID>
                             </studentDoc>
                         </starosta>
-                        <!--5 to 70 repetitions:-->
                         <students>
                             <name>string</name>
                             <surname>string</surname>
                             <patronim>string</patronim>
                             <dateOfBirth>2015-07-11</dateOfBirth>
                             <studentDoc>
-                                <docID>201</docID>
+<docID>201</docID>
                             </studentDoc>
                         </students>
                         <students>
@@ -454,7 +436,7 @@
                             <patronim>string</patronim>
                             <dateOfBirth>2011-01-01+03:00</dateOfBirth>
                             <studentDoc>
-                                <docID>201</docID>
+<docID>201</docID>
                             </studentDoc>
                         </students>
                         <students>
@@ -463,7 +445,7 @@
                             <patronim>string</patronim>
                             <dateOfBirth>2008-11-03</dateOfBirth>
                             <studentDoc>
-                                <docID>201</docID>
+<docID>201</docID>
                             </studentDoc>
                         </students>
                         <students>
@@ -472,7 +454,7 @@
                             <patronim>string</patronim>
                             <dateOfBirth>2002-11-30</dateOfBirth>
                             <studentDoc>
-                                <docID>201</docID>
+<docID>201</docID>
                             </studentDoc>
                         </students>
                         <students>
@@ -481,7 +463,7 @@
                             <patronim>string</patronim>
                             <dateOfBirth>2019-08-10</dateOfBirth>
                             <studentDoc>
-                                <docID>201</docID>
+<docID>201</docID>
                             </studentDoc>
                         </students>
                     </group>
@@ -490,7 +472,6 @@
         </departmentOfScientific>
         <economicDepartment>
             <departmentName>string</departmentName>
-            <!--1 to 5 repetitions:-->
             <boss>
                 <name>string</name>
                 <surname>string</surname>
@@ -500,7 +481,6 @@
                     <docID>201</docID>
                 </employeeDoc>
             </boss>
-            <!--1 to 500 repetitions:-->
             <departmentEmployee>
                 <name>string</name>
                 <surname>string</surname>
@@ -512,7 +492,6 @@
             </departmentEmployee>
             <cafe>
                 <departmentName>string</departmentName>
-                <!--1 to 5 repetitions:-->
                 <boss>
                     <name>string</name>
                     <surname>string</surname>
@@ -522,7 +501,6 @@
                         <docID>201</docID>
                     </employeeDoc>
                 </boss>
-                <!--1 to 500 repetitions:-->
                 <departmentEmployee>
                     <name>string</name>
                     <surname>string</surname>
@@ -535,7 +513,6 @@
             </cafe>
             <staffDepartment>
                 <departmentName>string</departmentName>
-                <!--1 to 5 repetitions:-->
                 <boss>
                     <name>string</name>
                     <surname>string</surname>
@@ -545,7 +522,6 @@
                         <docID>201</docID>
                     </employeeDoc>
                 </boss>
-                <!--1 to 500 repetitions:-->
                 <departmentEmployee>
                     <name>string</name>
                     <surname>string</surname>

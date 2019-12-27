@@ -14,9 +14,9 @@ public class Main {
     public static void main(String[] args) throws ParserConfigurationException, IOException, SAXException, JAXBException {
 
         LabInterface lab = new LabInterface(
-                "src\\main\\resources\\testXML\\TestXSD.xsd",
-                "src\\main\\resources\\testXML\\NewGen2.xml",
-                "src\\main\\resources\\testXML\\New_1.xml");
+                "src/main/resources/testXML/TestXSD.xsd",
+                "src/main/resources/testXML/NewGen4.xml",
+                "src/main/resources/testXML/New_4.xml");
 
         lab.doDOM();
 
@@ -24,29 +24,12 @@ public class Main {
 
         lab.doSAX();
 
-        lab.doJAXB(Object.class, "student_new.xml");
+        lab.doJAXB("src/main/resources/testXML/NewGen4.xml", "output.xml");
+
+        lab.doValidation("src/main/resources/testXML/TestXSD.xsd", "output.xml");
 
 
-        //lab.doJAXB("student.xml");
 
-        ///////////JAXB DEMO///////////////////////
-        //JAXBParser jaxbParser = new JAXBParser("resources\\testXML\\3.xml");
-
-       /* JAXBContext context = JAXBContext.newInstance(Student.class);
-        Marshaller marshaller = context.createMarshaller();
-        marshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, Boolean.TRUE);
-
-
-        Student student = new Student();
-        student.setAge(50);
-        student.setId(9999);
-        student.setLanguage("qwe");
-        student.setName("qweqeqewqew");
-        student.setPassword("d");
-
-
-        marshaller.marshal(student, new File("student.xml"));
-*/
 
 
     }

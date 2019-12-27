@@ -156,8 +156,9 @@ public class DOMElem {
     }
 
 
-    public void printDOC2() {
+    public void printDOC2(String xmlPath) {
 
+        Document DOMDoc = getXML(xmlPath);
         Node node1 = DOMDoc.getDocumentElement();
 
         Node doc = node1.getParentNode();

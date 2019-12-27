@@ -1,7 +1,4 @@
-import com.example.Doc;
-import com.example.ObjectFactory;
-import com.example.Student;
-import com.example.University;
+
 
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;
@@ -31,8 +28,10 @@ public class LabInterface {
     public void doDOM() {
         DOMElem dom = new DOMElem(pathToPatternXML);
         dom.randomizeNames();
-        dom.printDOC2();
+
         dom.save(pathToFinalXML);
+
+        dom.printDOC2(pathToFinalXML);
 
     }
 
@@ -42,14 +41,19 @@ public class LabInterface {
         mySAXParser.parse(pathToFinalXML, mySaxHandler);
     }
 
-    public void doJAXB(Class aClass , String fileToGen) {
-       JAXBParser jaxbParser = new JAXBParser(fileToGen);
+    public void doJAXB(String fileFrom , String fileToGen) {
+       JAXBParser jaxbParser = new JAXBParser(fileFrom, fileToGen);
 
     }
 
     public void doValidation() {
         XMLByXSDValidator validator = new XMLByXSDValidator();
-        System.out.println(validator.checkByXSD(pathToXSD, pathToFinalXML));
+        System.out.println("Validation result: " + validator.checkByXSD(pathToXSD, pathToFinalXML));
+    }
+
+    public void doValidation(String pathToXSD, String pathToFinalXML) {
+        XMLByXSDValidator validator = new XMLByXSDValidator();
+        System.out.println("Validation result: " + validator.checkByXSD(pathToXSD, pathToFinalXML));
     }
 
 }

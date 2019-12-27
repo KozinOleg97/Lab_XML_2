@@ -1,47 +1,24 @@
-import com.example.*;
+
+import ru.rsatu.kozin.lab.*;
 
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;
 import javax.xml.bind.Marshaller;
 import javax.xml.bind.Unmarshaller;
 import java.io.File;
+import java.io.IOException;
 import java.io.Serializable;
 import java.util.List;
 
 public class JAXBParser {
 
-    JAXBParser(String path)  {
+    JAXBParser(String pathFrom, String pathTo)  {
 
-        String fileName = path;
-
-        // объект Student с какими-то данными
-       /* Student student = new Student();
-
-        Doc doc = new Doc();
-        doc.setDocID(BigInteger.valueOf(1111111));
-
-        student.setStudentDoc(doc);// setId(1);
-
-        Date yourDate = new Date();
-        yourDate.setTime(1233);
-        GregorianCalendar c = new GregorianCalendar();
-        c.setTime(yourDate);
-        XMLGregorianCalendar date2 = null;
-        try {
-            date2 = DatatypeFactory.newInstance().newXMLGregorianCalendar(c);
-        } catch (DatatypeConfigurationException e) {
-            e.printStackTrace();
-        }
-
-        student.setDateOfBirth(date2);// setAge(22);
-        student.setName("Andrew");
-        student.setSurname("Surname___");
-        student.setPatronim("Patronim__");*/
 
 
 
         // восстанавливаем объект из XML файла
-        University university = fromXmlToObject(fileName);
+        University university = fromXmlToObject(pathFrom);
         if (university != null) {
             System.out.println(university.toString());
             System.out.println(university.getClass());
@@ -51,19 +28,22 @@ public class JAXBParser {
         university = editObj(university);
 
         // сохраняем объект в XML файл
-        convertObjectToXml(university, fileName);
+        convertObjectToXml(university, pathTo);
 
 
     }
 
     private University editObj(University university) {
 
-        university.setUniversityName("New Name");
+        university.setUniversityName("New Name!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
         Administration administration =  university.getAdministration();
         DepartmentOfScientific departmentOfScientific = administration.getDepartmentOfScientific();
         Library library = departmentOfScientific.getLibrary();
-        Book book =  library.getBook();
-        List<Serializable> q = book.getBookIDAndTitleAndState();
+        List<Book>  books =  library.getBook();
+        for (Book book: books){
+            System.out.println(book.getTitle()+ "  " + book.getTitle() +"  "+ book.isState());
+        }
+        //List<Serializable> q = book.getBookIDAndTitleAndState();
 
         return university;
     }
@@ -76,7 +56,7 @@ public class JAXBParser {
             JAXBContext jaxbContext = JAXBContext.newInstance(University.class);
             Unmarshaller un = jaxbContext.createUnmarshaller();
 
-            return (University) un.unmarshal(new File("src\\main\\resources\\testXML\\New_1.xml"));
+            return (University) un.unmarshal(new File(filePath));
         } catch (JAXBException e) {
             e.printStackTrace();
         }
@@ -92,6 +72,8 @@ public class JAXBParser {
             marshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, Boolean.TRUE);
 
             //  объект в файл
+            //File file = new File(filePath);
+            //file.createNewFile();
             marshaller.marshal(university, new File(filePath));
         } catch (JAXBException e) {
             e.printStackTrace();

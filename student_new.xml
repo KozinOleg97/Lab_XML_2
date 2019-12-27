@@ -3,18 +3,18 @@
     <administration>
         <departmentName>string</departmentName>
         <boss>
-            <name>Вениамин</name>
-            <surname>Папанов</surname>
-            <patronim>Зиновиевич</patronim>
+            <name>string</name>
+            <surname>string</surname>
+            <patronim>string</patronim>
             <dateOfBirth>2008-09-29</dateOfBirth>
             <employeeDoc>
                 <docID>201</docID>
             </employeeDoc>
         </boss>
         <departmentEmployee>
-            <name>Дмитрий</name>
-            <surname>Ешевский</surname>
-            <patronim>Мирославович</patronim>
+            <name>string</name>
+            <surname>string</surname>
+            <patronim>string</patronim>
             <dateOfBirth>2014-09-19</dateOfBirth>
             <employeeDoc>
                 <docID>201</docID>
@@ -23,18 +23,18 @@
         <bookkeeping>
             <departmentName>string</departmentName>
             <boss>
-                <name>Алиса</name>
-                <surname>Алимкина</surname>
-                <patronim>Михеевна</patronim>
+                <name>string</name>
+                <surname>string</surname>
+                <patronim>string</patronim>
                 <dateOfBirth>2006-08-19+04:00</dateOfBirth>
                 <employeeDoc>
                     <docID>201</docID>
                 </employeeDoc>
             </boss>
             <departmentEmployee>
-                <name>Полина</name>
-                <surname>Колобкова</surname>
-                <patronim>Анатолиевна</patronim>
+                <name>string</name>
+                <surname>string</surname>
+                <patronim>string</patronim>
                 <dateOfBirth>2009-05-16</dateOfBirth>
                 <employeeDoc>
                     <docID>201</docID>
@@ -44,18 +44,18 @@
         <departmentOfScientific>
             <departmentName>string</departmentName>
             <boss>
-                <name>Полина</name>
-                <surname>Клименкова</surname>
-                <patronim>Елисеевна</patronim>
+                <name>string</name>
+                <surname>string</surname>
+                <patronim>string</patronim>
                 <dateOfBirth>2003-08-09+04:00</dateOfBirth>
                 <employeeDoc>
                     <docID>201</docID>
                 </employeeDoc>
             </boss>
             <departmentEmployee>
-                <name>Вадим</name>
-                <surname>Муленко</surname>
-                <patronim>Серафимович</patronim>
+                <name>string</name>
+                <surname>string</surname>
+                <patronim>string</patronim>
                 <dateOfBirth>2012-09-13+04:00</dateOfBirth>
                 <employeeDoc>
                     <docID>201</docID>
@@ -64,18 +64,18 @@
             <library>
                 <departmentName>string</departmentName>
                 <boss>
-                    <name>Наталия</name>
-                    <surname>Лагошина</surname>
-                    <patronim>Елизаровна</patronim>
+                    <name>string</name>
+                    <surname>string</surname>
+                    <patronim>string</patronim>
                     <dateOfBirth>2009-10-14</dateOfBirth>
                     <employeeDoc>
                         <docID>201</docID>
                     </employeeDoc>
                 </boss>
                 <departmentEmployee>
-                    <name>Вениамин</name>
-                    <surname>Папанов</surname>
-                    <patronim>Зиновиевич</patronim>
+                    <name>string</name>
+                    <surname>string</surname>
+                    <patronim>string</patronim>
                     <dateOfBirth>2010-03-18</dateOfBirth>
                     <employeeDoc>
                         <docID>201</docID>
@@ -85,50 +85,23 @@
                     <bookID>201</bookID>
                     <title>string</title>
                     <state>true</state>
-                    <bookID>201</bookID>
-                    <title>string</title>
-                    <state>true</state>
-                    <bookID>201</bookID>
-                    <title>string</title>
-                    <state>false</state>
-                    <bookID>201</bookID>
-                    <title>string</title>
-                    <state>false</state>
-                    <bookID>201</bookID>
-                    <title>string</title>
-                    <state>true</state>
-                    <bookID>201</bookID>
-                    <title>string</title>
-                    <state>false</state>
-                    <bookID>201</bookID>
-                    <title>string</title>
-                    <state>false</state>
-                    <bookID>201</bookID>
-                    <title>string</title>
-                    <state>false</state>
-                    <bookID>201</bookID>
-                    <title>string</title>
-                    <state>false</state>
-                    <bookID>201</bookID>
-                    <title>string</title>
-                    <state>true</state>
                 </book>
             </library>
             <educationalMethodicalDepartment>
                 <departmentName>string</departmentName>
                 <boss>
-                    <name>Анисья</name>
-                    <surname>Силина</surname>
-                    <patronim>Никитевна</patronim>
+                    <name>string</name>
+                    <surname>string</surname>
+                    <patronim>string</patronim>
                     <dateOfBirth>2015-08-24</dateOfBirth>
                     <employeeDoc>
                         <docID>201</docID>
                     </employeeDoc>
                 </boss>
                 <departmentEmployee>
-                    <name>Наталия</name>
-                    <surname>Винокурова</surname>
-                    <patronim>Владленовна</patronim>
+                    <name>string</name>
+                    <surname>string</surname>
+                    <patronim>string</patronim>
                     <dateOfBirth>2015-06-18+03:00</dateOfBirth>
                     <employeeDoc>
                         <docID>201</docID>
@@ -138,9 +111,9 @@
             <faculty>
                 <facultyName>string</facultyName>
                 <dean>
-                    <name>Арсений</name>
-                    <surname>Лебедев</surname>
-                    <patronim>Ипполитович</patronim>
+                    <name>string</name>
+                    <surname>string</surname>
+                    <patronim>string</patronim>
                     <dateOfBirth>2000-04-21+04:00</dateOfBirth>
                     <employeeDoc>
                         <docID>201</docID>
@@ -149,27 +122,27 @@
                 <kafedra>
                     <kafedraName>string</kafedraName>
                     <headTeacher>
-                        <name>Иван</name>
-                        <surname>Набокин</surname>
-                        <patronim>Остапович</patronim>
+                        <name>string</name>
+                        <surname>string</surname>
+                        <patronim>string</patronim>
                         <dateOfBirth>2017-04-19+03:00</dateOfBirth>
                         <employeeDoc>
                             <docID>201</docID>
                         </employeeDoc>
                     </headTeacher>
                     <teacher>
-                        <name>Алексей</name>
-                        <surname>Рассказов</surname>
-                        <patronim>Андреевич</patronim>
+                        <name>string</name>
+                        <surname>string</surname>
+                        <patronim>string</patronim>
                         <dateOfBirth>2008-08-06+04:00</dateOfBirth>
                         <employeeDoc>
                             <docID>201</docID>
                         </employeeDoc>
                     </teacher>
                     <teacher>
-                        <name>Владимир</name>
-                        <surname>Шукшин</surname>
-                        <patronim>Чеславович</patronim>
+                        <name>string</name>
+                        <surname>string</surname>
+                        <patronim>string</patronim>
                         <dateOfBirth>2011-12-25</dateOfBirth>
                         <employeeDoc>
                             <docID>201</docID>
@@ -179,54 +152,54 @@
                         <groupName>string</groupName>
                         <year>2015+03:00</year>
                         <starosta>
-                            <name>Наталья</name>
-                            <surname>Захарова</surname>
-                            <patronim>Юлиевна</patronim>
+                            <name>string</name>
+                            <surname>string</surname>
+                            <patronim>string</patronim>
                             <dateOfBirth>2018-07-19+03:00</dateOfBirth>
                             <studentDoc>
 <docID>201</docID>
                             </studentDoc>
                         </starosta>
                         <students>
-                            <name>Ирина</name>
-                            <surname>Нагиева</surname>
-                            <patronim>Юлиевна</patronim>
+                            <name>string</name>
+                            <surname>string</surname>
+                            <patronim>string</patronim>
                             <dateOfBirth>2004-12-06+03:00</dateOfBirth>
                             <studentDoc>
 <docID>201</docID>
                             </studentDoc>
                         </students>
                         <students>
-                            <name>Владимир</name>
-                            <surname>Винокуров</surname>
-                            <patronim>Елизарович</patronim>
+                            <name>string</name>
+                            <surname>string</surname>
+                            <patronim>string</patronim>
                             <dateOfBirth>2006-12-05</dateOfBirth>
                             <studentDoc>
 <docID>201</docID>
                             </studentDoc>
                         </students>
                         <students>
-                            <name>Артур</name>
-                            <surname>Сыропоршнев</surname>
-                            <patronim>Савелиевич</patronim>
+                            <name>string</name>
+                            <surname>string</surname>
+                            <patronim>string</patronim>
                             <dateOfBirth>2016-09-11</dateOfBirth>
                             <studentDoc>
 <docID>201</docID>
                             </studentDoc>
                         </students>
                         <students>
-                            <name>Давид</name>
-                            <surname>Дасаев</surname>
-                            <patronim>Фролович</patronim>
+                            <name>string</name>
+                            <surname>string</surname>
+                            <patronim>string</patronim>
                             <dateOfBirth>2005-02-02</dateOfBirth>
                             <studentDoc>
 <docID>201</docID>
                             </studentDoc>
                         </students>
                         <students>
-                            <name>Изяслав</name>
-                            <surname>Пронин</surname>
-                            <patronim>Аполлинариевич</patronim>
+                            <name>string</name>
+                            <surname>string</surname>
+                            <patronim>string</patronim>
                             <dateOfBirth>2016-10-07+03:00</dateOfBirth>
                             <studentDoc>
 <docID>201</docID>
@@ -237,54 +210,54 @@
                         <groupName>string</groupName>
                         <year>2002</year>
                         <starosta>
-                            <name>Василий</name>
-                            <surname>Чернышёв</surname>
-                            <patronim>Игоревич</patronim>
+                            <name>string</name>
+                            <surname>string</surname>
+                            <patronim>string</patronim>
                             <dateOfBirth>2011-11-03</dateOfBirth>
                             <studentDoc>
 <docID>201</docID>
                             </studentDoc>
                         </starosta>
                         <students>
-                            <name>Милена</name>
-                            <surname>Киселева</surname>
-                            <patronim>Геннадиевна</patronim>
+                            <name>string</name>
+                            <surname>string</surname>
+                            <patronim>string</patronim>
                             <dateOfBirth>2008-08-28+04:00</dateOfBirth>
                             <studentDoc>
 <docID>201</docID>
                             </studentDoc>
                         </students>
                         <students>
-                            <name>Диана</name>
-                            <surname>Анникова</surname>
-                            <patronim>Святославовна</patronim>
+                            <name>string</name>
+                            <surname>string</surname>
+                            <patronim>string</patronim>
                             <dateOfBirth>2008-11-07+03:00</dateOfBirth>
                             <studentDoc>
 <docID>201</docID>
                             </studentDoc>
                         </students>
                         <students>
-                            <name>Денис</name>
-                            <surname>Гребенников</surname>
-                            <patronim>Геннадиевич</patronim>
+                            <name>string</name>
+                            <surname>string</surname>
+                            <patronim>string</patronim>
                             <dateOfBirth>2019-05-04</dateOfBirth>
                             <studentDoc>
 <docID>201</docID>
                             </studentDoc>
                         </students>
                         <students>
-                            <name>Леонид</name>
-                            <surname>Тычкин</surname>
-                            <patronim>Артемович</patronim>
+                            <name>string</name>
+                            <surname>string</surname>
+                            <patronim>string</patronim>
                             <dateOfBirth>2010-04-24+04:00</dateOfBirth>
                             <studentDoc>
 <docID>201</docID>
                             </studentDoc>
                         </students>
                         <students>
-                            <name>Осип</name>
-                            <surname>Стрельников</surname>
-                            <patronim>Давидович</patronim>
+                            <name>string</name>
+                            <surname>string</surname>
+                            <patronim>string</patronim>
                             <dateOfBirth>2014-07-21+04:00</dateOfBirth>
                             <studentDoc>
 <docID>201</docID>
@@ -296,9 +269,9 @@
             <faculty>
                 <facultyName>string</facultyName>
                 <dean>
-                    <name>Николай</name>
-                    <surname>Горев</surname>
-                    <patronim>Анатолиевич</patronim>
+                    <name>string</name>
+                    <surname>string</surname>
+                    <patronim>string</patronim>
                     <dateOfBirth>2005-05-29+04:00</dateOfBirth>
                     <employeeDoc>
                         <docID>201</docID>
@@ -307,27 +280,27 @@
                 <kafedra>
                     <kafedraName>string</kafedraName>
                     <headTeacher>
-                        <name>Анна</name>
-                        <surname>Курзыбова</surname>
-                        <patronim>Яновна</patronim>
+                        <name>string</name>
+                        <surname>string</surname>
+                        <patronim>string</patronim>
                         <dateOfBirth>2016-06-29</dateOfBirth>
                         <employeeDoc>
                             <docID>201</docID>
                         </employeeDoc>
                     </headTeacher>
                     <teacher>
-                        <name>Ефросиния</name>
-                        <surname>Потрепалова</surname>
-                        <patronim>Антониновна</patronim>
+                        <name>string</name>
+                        <surname>string</surname>
+                        <patronim>string</patronim>
                         <dateOfBirth>2012-06-26</dateOfBirth>
                         <employeeDoc>
                             <docID>201</docID>
                         </employeeDoc>
                     </teacher>
                     <teacher>
-                        <name>Ярослав</name>
-                        <surname>Матвеев</surname>
-                        <patronim>Тихонович</patronim>
+                        <name>string</name>
+                        <surname>string</surname>
+                        <patronim>string</patronim>
                         <dateOfBirth>2014-10-15</dateOfBirth>
                         <employeeDoc>
                             <docID>201</docID>
@@ -337,54 +310,54 @@
                         <groupName>string</groupName>
                         <year>2003+03:00</year>
                         <starosta>
-                            <name>Юлия</name>
-                            <surname>Дресвянина</surname>
-                            <patronim>Павеловна</patronim>
+                            <name>string</name>
+                            <surname>string</surname>
+                            <patronim>string</patronim>
                             <dateOfBirth>2007-06-23+04:00</dateOfBirth>
                             <studentDoc>
 <docID>201</docID>
                             </studentDoc>
                         </starosta>
                         <students>
-                            <name>Павел</name>
-                            <surname>Ржевский</surname>
-                            <patronim>Саввевич</patronim>
+                            <name>string</name>
+                            <surname>string</surname>
+                            <patronim>string</patronim>
                             <dateOfBirth>2013-11-24+04:00</dateOfBirth>
                             <studentDoc>
 <docID>201</docID>
                             </studentDoc>
                         </students>
                         <students>
-                            <name>Лука</name>
-                            <surname>Кириленко</surname>
-                            <patronim>Валериевич</patronim>
+                            <name>string</name>
+                            <surname>string</surname>
+                            <patronim>string</patronim>
                             <dateOfBirth>2017-03-08</dateOfBirth>
                             <studentDoc>
 <docID>201</docID>
                             </studentDoc>
                         </students>
                         <students>
-                            <name>Анна</name>
-                            <surname>Никерхоева</surname>
-                            <patronim>Игнатиевна</patronim>
+                            <name>string</name>
+                            <surname>string</surname>
+                            <patronim>string</patronim>
                             <dateOfBirth>2009-06-10</dateOfBirth>
                             <studentDoc>
 <docID>201</docID>
                             </studentDoc>
                         </students>
                         <students>
-                            <name>Ксения</name>
-                            <surname>Янушко</surname>
-                            <patronim>Потаповна</patronim>
+                            <name>string</name>
+                            <surname>string</surname>
+                            <patronim>string</patronim>
                             <dateOfBirth>2010-04-17+04:00</dateOfBirth>
                             <studentDoc>
 <docID>201</docID>
                             </studentDoc>
                         </students>
                         <students>
-                            <name>Сергей</name>
-                            <surname>Носачёв</surname>
-                            <patronim>Вадимович</patronim>
+                            <name>string</name>
+                            <surname>string</surname>
+                            <patronim>string</patronim>
                             <dateOfBirth>2016-10-25+03:00</dateOfBirth>
                             <studentDoc>
 <docID>201</docID>
@@ -395,54 +368,54 @@
                         <groupName>string</groupName>
                         <year>2014</year>
                         <starosta>
-                            <name>Эдуард</name>
-                            <surname>Фирсов</surname>
-                            <patronim>Ираклиевич</patronim>
+                            <name>string</name>
+                            <surname>string</surname>
+                            <patronim>string</patronim>
                             <dateOfBirth>2011-09-24+04:00</dateOfBirth>
                             <studentDoc>
 <docID>201</docID>
                             </studentDoc>
                         </starosta>
                         <students>
-                            <name>Евдоким</name>
-                            <surname>Филатов</surname>
-                            <patronim>Олегович</patronim>
+                            <name>string</name>
+                            <surname>string</surname>
+                            <patronim>string</patronim>
                             <dateOfBirth>2015-07-11</dateOfBirth>
                             <studentDoc>
 <docID>201</docID>
                             </studentDoc>
                         </students>
                         <students>
-                            <name>Нина</name>
-                            <surname>Бутылина</surname>
-                            <patronim>Федоровна</patronim>
+                            <name>string</name>
+                            <surname>string</surname>
+                            <patronim>string</patronim>
                             <dateOfBirth>2011-01-01+03:00</dateOfBirth>
                             <studentDoc>
 <docID>201</docID>
                             </studentDoc>
                         </students>
                         <students>
-                            <name>Нина</name>
-                            <surname>Тукай</surname>
-                            <patronim>Тихоновна</patronim>
+                            <name>string</name>
+                            <surname>string</surname>
+                            <patronim>string</patronim>
                             <dateOfBirth>2008-11-03</dateOfBirth>
                             <studentDoc>
 <docID>201</docID>
                             </studentDoc>
                         </students>
                         <students>
-                            <name>Мир</name>
-                            <surname>Бандуркин</surname>
-                            <patronim>Титович</patronim>
+                            <name>string</name>
+                            <surname>string</surname>
+                            <patronim>string</patronim>
                             <dateOfBirth>2002-11-30</dateOfBirth>
                             <studentDoc>
 <docID>201</docID>
                             </studentDoc>
                         </students>
                         <students>
-                            <name>Иван</name>
-                            <surname>Хуртин</surname>
-                            <patronim>Александрович</patronim>
+                            <name>string</name>
+                            <surname>string</surname>
+                            <patronim>string</patronim>
                             <dateOfBirth>2019-08-10</dateOfBirth>
                             <studentDoc>
 <docID>201</docID>
@@ -455,18 +428,18 @@
         <economicDepartment>
             <departmentName>string</departmentName>
             <boss>
-                <name>Константин</name>
-                <surname>Кручинкин</surname>
-                <patronim>Еремеевич</patronim>
+                <name>string</name>
+                <surname>string</surname>
+                <patronim>string</patronim>
                 <dateOfBirth>2003-04-21+04:00</dateOfBirth>
                 <employeeDoc>
                     <docID>201</docID>
                 </employeeDoc>
             </boss>
             <departmentEmployee>
-                <name>Ольга</name>
-                <surname>Агафонова</surname>
-                <patronim>Иларионовна</patronim>
+                <name>string</name>
+                <surname>string</surname>
+                <patronim>string</patronim>
                 <dateOfBirth>2003-03-28+03:00</dateOfBirth>
                 <employeeDoc>
                     <docID>201</docID>
@@ -475,18 +448,18 @@
             <cafe>
                 <departmentName>string</departmentName>
                 <boss>
-                    <name>Ксения</name>
-                    <surname>Морозова</surname>
-                    <patronim>Всеволодовна</patronim>
+                    <name>string</name>
+                    <surname>string</surname>
+                    <patronim>string</patronim>
                     <dateOfBirth>2015-12-02</dateOfBirth>
                     <employeeDoc>
                         <docID>201</docID>
                     </employeeDoc>
                 </boss>
                 <departmentEmployee>
-                    <name>Венедикт</name>
-                    <surname>Брынских</surname>
-                    <patronim>Маркович</patronim>
+                    <name>string</name>
+                    <surname>string</surname>
+                    <patronim>string</patronim>
                     <dateOfBirth>2007-10-06</dateOfBirth>
                     <employeeDoc>
                         <docID>201</docID>
@@ -496,18 +469,18 @@
             <staffDepartment>
                 <departmentName>string</departmentName>
                 <boss>
-                    <name>Ксения</name>
-                    <surname>Морозова</surname>
-                    <patronim>Всеволодовна</patronim>
+                    <name>string</name>
+                    <surname>string</surname>
+                    <patronim>string</patronim>
                     <dateOfBirth>2016-07-25+03:00</dateOfBirth>
                     <employeeDoc>
                         <docID>201</docID>
                     </employeeDoc>
                 </boss>
                 <departmentEmployee>
-                    <name>Полина</name>
-                    <surname>Тюрина</surname>
-                    <patronim>Станиславовна</patronim>
+                    <name>string</name>
+                    <surname>string</surname>
+                    <patronim>string</patronim>
                     <dateOfBirth>2003-05-15+04:00</dateOfBirth>
                     <employeeDoc>
                         <docID>201</docID>

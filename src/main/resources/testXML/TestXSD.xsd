@@ -108,17 +108,17 @@
     <xs:complexType name="library">
         <xs:complexContent>
             <xs:extension base="department">
-                <xs:choice>
-                    <xs:sequence>
-                        <xs:element name="book" type="book"/>
-                    </xs:sequence>
-                </xs:choice>
+
+                <xs:sequence minOccurs="10" maxOccurs="unbounded">
+                    <xs:element name="book" type="book"/>
+                </xs:sequence>
+
             </xs:extension>
         </xs:complexContent>
     </xs:complexType>
 
     <xs:complexType name="book">
-        <xs:sequence minOccurs="10" maxOccurs="unbounded">
+        <xs:sequence>
             <xs:element name="bookID" type="id"/>
             <xs:element name="title" type="xs:string"/>
             <xs:element name="state" type="xs:boolean"/>

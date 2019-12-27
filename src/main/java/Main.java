@@ -15,7 +15,7 @@ public class Main {
 
         LabInterface lab = new LabInterface(
                 "src\\main\\resources\\testXML\\TestXSD.xsd",
-                "src\\main\\resources\\testXML\\NewGen.xml",
+                "src\\main\\resources\\testXML\\NewGen2.xml",
                 "src\\main\\resources\\testXML\\New_1.xml");
 
         lab.doDOM();

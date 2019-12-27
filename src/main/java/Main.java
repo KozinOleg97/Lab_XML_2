@@ -18,8 +18,16 @@ public class Main {
                 "src\\main\\resources\\testXML\\NewGen.xml",
                 "src\\main\\resources\\testXML\\New_1.xml");
 
+        lab.doDOM();
+
         lab.doValidation();
-        lab.doJAXB("student.xml");
+
+        lab.doSAX();
+
+        lab.doJAXB(Object.class, "student_new.xml");
+
+
+        //lab.doJAXB("student.xml");
 
         ///////////JAXB DEMO///////////////////////
         //JAXBParser jaxbParser = new JAXBParser("resources\\testXML\\3.xml");

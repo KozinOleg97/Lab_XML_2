@@ -1,8 +1,19 @@
+import com.example.Doc;
+import com.example.ObjectFactory;
+import com.example.Student;
+import com.example.University;
+
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;
 import javax.xml.bind.Marshaller;
 import javax.xml.bind.Unmarshaller;
+import javax.xml.datatype.DatatypeConfigurationException;
+import javax.xml.datatype.DatatypeFactory;
+import javax.xml.datatype.XMLGregorianCalendar;
 import java.io.File;
+import java.math.BigInteger;
+import java.util.Date;
+import java.util.GregorianCalendar;
 
 public class LabInterface {
 
@@ -20,7 +31,9 @@ public class LabInterface {
     public void doDOM() {
         DOMElem dom = new DOMElem(pathToPatternXML);
         dom.randomizeNames();
+        dom.printDOC2();
         dom.save(pathToFinalXML);
+
     }
 
     public void doSAX() {
@@ -29,31 +42,9 @@ public class LabInterface {
         mySAXParser.parse(pathToFinalXML, mySaxHandler);
     }
 
-    public void doJAXB(String fileToGen) {
-        try {
-            JAXBContext context = JAXBContext.newInstance(Student.class);
+    public void doJAXB(Class aClass , String fileToGen) {
+       JAXBParser jaxbParser = new JAXBParser(fileToGen);
 
-            Unmarshaller unmarshaller = context.createUnmarshaller();
-            File xml = new File(pathToFinalXML);
-            Student student = (Student) unmarshaller.unmarshal(xml);
-
-
-            Marshaller marshaller = context.createMarshaller();
-            marshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true);
-
-
-            /*Student student = new Student();
-            student.setAge(50);
-            student.setId(9999);
-            student.setLanguage("test_lang");
-            student.setName("test_name");
-            student.setPassword("test_pass");*/
-
-
-            marshaller.marshal(student, new File(fileToGen));
-        } catch (JAXBException e) {
-            e.printStackTrace();
-        }
     }
 
     public void doValidation() {

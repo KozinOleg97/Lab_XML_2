@@ -18,6 +18,7 @@ import javax.xml.validation.Schema;
 import javax.xml.validation.SchemaFactory;
 import javax.xml.validation.Validator;
 
+import org.apache.log4j.Logger;
 import org.w3c.dom.Document;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
@@ -25,6 +26,8 @@ import org.xml.sax.SAXException;
 
 
 public class DOMElem {
+
+    private static final Logger log = Logger.getLogger(XMLByXSDValidator.class);
 
     public Document DOMDoc;
     private String path;
@@ -79,7 +82,7 @@ public class DOMElem {
     }
 
     private String getRandomName() {
-        Integer Min = 1, Max =listOfNames.size(), rndNum;
+        Integer Min = 1, Max =listOfNames.size()-1, rndNum;
         rndNum = Min + (int)(Math.random() * ((Max - Min) + 1));
         //Random rndGen = new Random(System.currentTimeMillis());
         //this.rnd = rndGen.nextInt(listOfNames.size());
@@ -103,6 +106,7 @@ public class DOMElem {
 
     public void randomizeNames() {
 
+        int cnt =0;
         NodeList nodeList = DOMDoc.getElementsByTagName("*");
         for (int i = 0; i < nodeList.getLength(); i++) {
             Node node = nodeList.item(i);
@@ -111,18 +115,23 @@ public class DOMElem {
                 switch (node.getNodeName()) {
                     case "name":
                         node.setTextContent(getRandomName());
+                        cnt++;
                         break;
                     case "surname":
                         node.setTextContent(getRandomSurname());
+                        cnt++;
                         break;
                     case "patronim":
                         node.setTextContent(getRandomPatronim());
+                        cnt++;
                         break;
                 }
 
 
             }
         }
+
+        log.info("Changed " + cnt + " nodes");
 
 
     }
@@ -213,7 +222,7 @@ public class DOMElem {
             tr.transform(source, result);
         } catch (TransformerException | IOException e) {
             e.printStackTrace(System.out);
-
+            log.error("DOM save error" , e);
         }
     }
 

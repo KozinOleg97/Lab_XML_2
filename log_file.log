@@ -466,3 +466,6 @@ org.xml.sax.SAXParseException; systemId: file:/home/denis/IntelliJIDEAProjects/L
 2019-12-27 16:40:51 INFO  XMLByXSDValidator:139 - Changed 144 nodes
 2019-12-27 16:40:51 INFO  XMLByXSDValidator:37 - Validation succeed
 2019-12-27 16:40:51 INFO  XMLByXSDValidator:37 - Validation succeed
+2020-01-07 22:05:26 INFO  XMLByXSDValidator:139 - Changed 144 nodes
+2020-01-07 22:05:26 INFO  XMLByXSDValidator:37 - Validation succeed
+2020-01-07 22:05:27 INFO  XMLByXSDValidator:37 - Validation succeed

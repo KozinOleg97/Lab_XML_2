@@ -469,3 +469,194 @@ org.xml.sax.SAXParseException; systemId: file:/home/denis/IntelliJIDEAProjects/L
 2020-01-07 22:05:26 INFO  XMLByXSDValidator:139 - Changed 144 nodes
 2020-01-07 22:05:26 INFO  XMLByXSDValidator:37 - Validation succeed
 2020-01-07 22:05:27 INFO  XMLByXSDValidator:37 - Validation succeed
+2020-01-07 22:26:17 INFO  XMLByXSDValidator:139 - Changed 144 nodes
+2020-01-07 22:26:17 INFO  XMLByXSDValidator:37 - Validation succeed
+2020-01-07 22:26:17 INFO  XMLByXSDValidator:37 - Validation succeed
+2020-01-07 22:26:53 INFO  XMLByXSDValidator:139 - Changed 144 nodes
+2020-01-07 22:26:53 INFO  XMLByXSDValidator:37 - Validation succeed
+2020-01-07 22:26:53 INFO  XMLByXSDValidator:37 - Validation succeed
+2020-01-07 22:31:17 INFO  XMLByXSDValidator:138 - Changed 144 nodes
+2020-01-07 22:31:17 INFO  XMLByXSDValidator:37 - Validation succeed
+2020-01-07 22:31:17 INFO  XMLByXSDValidator:37 - Validation succeed
+2020-01-07 23:09:35 INFO  XMLByXSDValidator:115 - Changed 144 nodes
+2020-01-07 23:37:51 INFO  XMLByXSDValidator:117 - Changed 144 nodes
+2020-01-07 23:37:51 INFO  XMLByXSDValidator:37 - Validation succeed
+2020-01-07 23:37:52 INFO  XMLByXSDValidator:37 - Validation succeed
+2020-01-07 23:38:09 ERROR XMLByXSDValidator:42 - SAXException
+org.xml.sax.SAXParseException; systemId: file:///E:/Programming/Java/Lab_XML_2/; lineNumber: 1; columnNumber: 1; Content is not allowed in prolog.
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:257)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:339)
+	at javax.xml.parsers.DocumentBuilder.parse(DocumentBuilder.java:177)
+	at DOMElem.getXML(DOMElem.java:36)
+	at LabInterface.doDOM(LabInterface.java:33)
+	at Main.main(Main.java:21)
+2020-01-08 00:31:44 INFO  XMLByXSDValidator:122 - Changed 144 nodes
+2020-01-08 00:31:44 INFO  XMLByXSDValidator:37 - Validation succeed
+2020-01-08 00:31:44 INFO  XMLByXSDValidator:37 - Validation succeed
+2020-01-08 00:31:53 ERROR LabInterface:48 - DOM Init err(wrong path): 
+Exeptions.InitErr: getXML Err
+	at DOMElem.getXML(DOMElem.java:45)
+	at LabInterface.doDOM(LabInterface.java:40)
+	at Main.main(Main.java:21)
+2020-01-08 00:31:53 INFO  XMLByXSDValidator:37 - Validation succeed
+2020-01-08 00:31:53 INFO  XMLByXSDValidator:37 - Validation succeed
+2020-01-08 00:34:09 ERROR LabInterface:49 - DOM Init err(wrong path): 
+Exeptions.InitErr: getXML Err
+	at DOMElem.getXML(DOMElem.java:45)
+	at LabInterface.doDOM(LabInterface.java:41)
+	at Main.main(Main.java:22)
+2020-01-08 00:35:30 ERROR LabInterface:49 - DOM Init err(wrong path): 
+Exeptions.InitErr: getXML Err
+	at DOMElem.getXML(DOMElem.java:45)
+	at LabInterface.doDOM(LabInterface.java:41)
+	at Main.main(Main.java:23)
+2020-01-08 00:36:43 INFO  XMLByXSDValidator:122 - Changed 144 nodes
+2020-01-08 00:36:43 INFO  XMLByXSDValidator:37 - Validation succeed
+2020-01-08 00:36:43 INFO  XMLByXSDValidator:37 - Validation succeed
+2020-01-08 00:36:50 INFO  XMLByXSDValidator:122 - Changed 144 nodes
+2020-01-08 00:36:50 INFO  XMLByXSDValidator:37 - Validation succeed
+2020-01-08 00:36:50 INFO  XMLByXSDValidator:37 - Validation succeed
+2020-01-08 00:37:10 INFO  XMLByXSDValidator:122 - Changed 0 nodes
+2020-01-08 00:41:36 INFO  XMLByXSDValidator:122 - Changed 0 nodes
+2020-01-08 00:41:36 ERROR LabInterface:52 - DOM output err: src/main/resources/testXML/New_4.xml | [#document: null]
+Exeptions.OutputErr: Print error (nullPointer)
+	at DOMElem.printDOC2(DOMElem.java:161)
+	at LabInterface.doDOM(LabInterface.java:46)
+	at Main.main(Main.java:23)
+2020-01-08 00:45:06 INFO  XMLByXSDValidator:122 - Changed 0 nodes
+2020-01-08 00:45:07 ERROR LabInterface:52 - DOM output err: src/main/resources/testXML/New_4.xml | [#document: null]
+Exeptions.OutputErr: Print error (nullPointer)
+	at DOMElem.printDOC2(DOMElem.java:161)
+	at LabInterface.doDOM(LabInterface.java:46)
+	at Main.main(Main.java:23)
+2020-01-08 00:46:59 INFO  XMLByXSDValidator:122 - Changed 0 nodes
+2020-01-08 00:46:59 ERROR LabInterface:52 - DOM output err: src/main/resources/testXML/New_4.xml | [#document: null]
+Exeptions.OutputErr: Print error (nullPointer)
+	at DOMElem.printDOC2(DOMElem.java:161)
+	at LabInterface.doDOM(LabInterface.java:46)
+	at Main.main(Main.java:23)
+2020-01-08 01:02:29 INFO  XMLByXSDValidator:122 - Changed 0 nodes
+2020-01-08 01:02:29 ERROR LabInterface:49 - DOM output err: src/main/resources/testXML/New_4.xml | [#document: null]
+Exeptions.OutputErr: Print error (nullPointer)
+	at DOMElem.printDOC2(DOMElem.java:161)
+	at LabInterface.doDOM(LabInterface.java:43)
+	at Main.main(Main.java:24)
+2020-01-08 01:02:38 INFO  XMLByXSDValidator:122 - Changed 0 nodes
+2020-01-08 01:02:38 ERROR LabInterface:49 - DOM output err: src/main/resources/testXML/New_4.xml | [#document: null]
+Exeptions.OutputErr: Print error (nullPointer)
+	at DOMElem.printDOC2(DOMElem.java:161)
+	at LabInterface.doDOM(LabInterface.java:43)
+	at Main.main(Main.java:24)
+2020-01-08 01:03:20 INFO  XMLByXSDValidator:122 - Changed 144 nodes
+2020-01-08 01:03:20 INFO  XMLByXSDValidator:37 - Validation succeed
+2020-01-08 01:03:20 INFO  XMLByXSDValidator:37 - Validation succeed
+2020-01-08 01:10:46 INFO  XMLByXSDValidator:122 - Changed 144 nodes
+2020-01-08 01:10:46 INFO  XMLByXSDValidator:37 - Validation succeed
+2020-01-08 01:10:46 INFO  XMLByXSDValidator:37 - Validation succeed
+2020-01-08 01:18:33 INFO  XMLByXSDValidator:122 - Changed 144 nodes
+2020-01-08 01:18:33 INFO  XMLByXSDValidator:33 - Validation succeed
+2020-01-08 01:18:33 INFO  XMLByXSDValidator:33 - Validation succeed
+2020-01-08 01:21:51 INFO  XMLByXSDValidator:122 - Changed 144 nodes
+2020-01-08 01:21:51 INFO  XMLByXSDValidator:33 - Validation succeed
+2020-01-08 01:21:51 INFO  XMLByXSDValidator:33 - Validation succeed
+2020-01-08 01:28:43 INFO  XMLByXSDValidator:122 - Changed 144 nodes
+2020-01-08 01:28:43 INFO  XMLByXSDValidator:33 - Validation succeed
+2020-01-08 01:28:43 INFO  XMLByXSDValidator:33 - Validation succeed
+2020-01-08 01:29:04 INFO  XMLByXSDValidator:122 - Changed 144 nodes
+2020-01-08 01:29:04 INFO  XMLByXSDValidator:33 - Validation succeed
+2020-01-08 01:29:04 INFO  XMLByXSDValidator:33 - Validation succeed
+2020-01-08 01:30:33 INFO  XMLByXSDValidator:122 - Changed 144 nodes
+2020-01-08 01:30:33 INFO  XMLByXSDValidator:33 - Validation succeed
+2020-01-08 01:30:33 INFO  XMLByXSDValidator:33 - Validation succeed
+2020-01-08 01:31:12 INFO  XMLByXSDValidator:122 - Changed 144 nodes
+2020-01-08 01:31:12 INFO  XMLByXSDValidator:33 - Validation succeed
+2020-01-08 01:31:12 INFO  XMLByXSDValidator:33 - Validation succeed
+2020-01-08 01:31:21 INFO  XMLByXSDValidator:122 - Changed 144 nodes
+2020-01-08 01:31:21 INFO  XMLByXSDValidator:33 - Validation succeed
+2020-01-08 01:31:21 INFO  XMLByXSDValidator:33 - Validation succeed
+2020-01-08 01:39:29 INFO  XMLByXSDValidator:122 - Changed 144 nodes
+2020-01-08 01:39:29 INFO  XMLByXSDValidator:33 - Validation succeed
+2020-01-08 01:40:28 INFO  XMLByXSDValidator:122 - Changed 144 nodes
+2020-01-08 01:40:29 INFO  XMLByXSDValidator:33 - Validation succeed
+2020-01-08 01:40:32 INFO  XMLByXSDValidator:122 - Changed 144 nodes
+2020-01-08 01:40:32 INFO  XMLByXSDValidator:33 - Validation succeed
+2020-01-08 01:44:36 INFO  XMLByXSDValidator:122 - Changed 144 nodes
+2020-01-08 01:44:36 INFO  XMLByXSDValidator:33 - Validation succeed
+2020-01-08 01:44:56 INFO  XMLByXSDValidator:122 - Changed 144 nodes
+2020-01-08 01:44:56 INFO  XMLByXSDValidator:33 - Validation succeed
+2020-01-08 01:53:42 INFO  XMLByXSDValidator:122 - Changed 144 nodes
+2020-01-08 01:53:42 INFO  XMLByXSDValidator:33 - Validation succeed
+2020-01-08 01:53:47 ERROR LabInterface:70 - SAX edit err
+Exeptions.EditErr: SAX err
+	at MySAXParser.parse(MySAXParser.java:33)
+	at LabInterface.doSAX(LabInterface.java:65)
+	at Main.main(Main.java:29)
+2020-01-08 01:53:54 INFO  XMLByXSDValidator:122 - Changed 144 nodes
+2020-01-08 01:53:54 INFO  XMLByXSDValidator:33 - Validation succeed
+2020-01-08 01:54:07 ERROR LabInterface:70 - SAX edit err
+Exeptions.EditErr: SAX err
+	at MySAXParser.parse(MySAXParser.java:33)
+	at LabInterface.doSAX(LabInterface.java:65)
+	at Main.main(Main.java:29)
+2020-01-08 01:54:25 INFO  XMLByXSDValidator:122 - Changed 144 nodes
+2020-01-08 01:54:25 INFO  XMLByXSDValidator:33 - Validation succeed
+2020-01-08 01:55:37 ERROR LabInterface:70 - SAX edit err
+Exeptions.EditErr: SAX err
+	at MySAXParser.parse(MySAXParser.java:33)
+	at LabInterface.doSAX(LabInterface.java:65)
+	at Main.main(Main.java:29)
+2020-01-08 01:55:38 INFO  XMLByXSDValidator:122 - Changed 144 nodes
+2020-01-08 01:55:38 INFO  XMLByXSDValidator:33 - Validation succeed
+2020-01-08 01:56:28 INFO  XMLByXSDValidator:122 - Changed 144 nodes
+2020-01-08 01:56:28 INFO  XMLByXSDValidator:33 - Validation succeed
+2020-01-08 01:56:31 INFO  XMLByXSDValidator:33 - Validation succeed
+2020-01-08 01:56:51 INFO  XMLByXSDValidator:122 - Changed 144 nodes
+2020-01-08 01:56:51 INFO  XMLByXSDValidator:33 - Validation succeed
+2020-01-08 01:57:18 INFO  XMLByXSDValidator:33 - Validation succeed
+2020-01-08 01:57:32 INFO  XMLByXSDValidator:122 - Changed 144 nodes
+2020-01-08 01:57:32 INFO  XMLByXSDValidator:33 - Validation succeed
+2020-01-08 01:58:13 INFO  XMLByXSDValidator:122 - Changed 144 nodes
+2020-01-08 01:58:13 INFO  XMLByXSDValidator:33 - Validation succeed
+2020-01-08 02:04:38 INFO  XMLByXSDValidator:122 - Changed 144 nodes
+2020-01-08 02:04:38 INFO  XMLByXSDValidator:33 - Validation succeed
+2020-01-08 02:05:06 INFO  XMLByXSDValidator:122 - Changed 144 nodes
+2020-01-08 02:05:06 INFO  XMLByXSDValidator:33 - Validation succeed
+2020-01-08 02:15:08 INFO  XMLByXSDValidator:126 - Changed 144 nodes
+2020-01-08 02:15:08 INFO  XMLByXSDValidator:33 - Validation succeed
+2020-01-08 02:15:08 INFO  XMLByXSDValidator:33 - Validation succeed
+2020-01-08 02:16:13 INFO  XMLByXSDValidator:126 - Changed 144 nodes
+2020-01-08 02:16:13 INFO  XMLByXSDValidator:33 - Validation succeed
+2020-01-08 02:16:13 INFO  XMLByXSDValidator:33 - Validation succeed
+2020-01-08 02:16:24 INFO  XMLByXSDValidator:126 - Changed 144 nodes
+2020-01-08 02:16:24 INFO  XMLByXSDValidator:33 - Validation succeed
+2020-01-08 02:16:24 INFO  XMLByXSDValidator:33 - Validation succeed
+2020-01-08 02:17:42 INFO  XMLByXSDValidator:126 - Changed 144 nodes
+2020-01-08 02:17:42 INFO  XMLByXSDValidator:33 - Validation succeed
+2020-01-08 02:17:42 INFO  XMLByXSDValidator:33 - Validation succeed
+2020-01-08 02:20:09 INFO  XMLByXSDValidator:130 - Changed 144 nodes
+2020-01-08 02:20:09 INFO  XMLByXSDValidator:33 - Validation succeed
+2020-01-08 02:20:10 INFO  XMLByXSDValidator:33 - Validation succeed
+2020-01-08 02:28:49 INFO  XMLByXSDValidator:130 - Changed 144 nodes
+2020-01-08 02:28:49 INFO  XMLByXSDValidator:33 - Validation succeed
+2020-01-08 02:28:49 INFO  XMLByXSDValidator:33 - Validation succeed
+2020-01-08 02:30:14 INFO  XMLByXSDValidator:130 - Changed 144 nodes
+2020-01-08 02:30:14 INFO  XMLByXSDValidator:33 - Validation succeed
+2020-01-08 02:30:14 INFO  XMLByXSDValidator:33 - Validation succeed
+2020-01-08 02:30:20 INFO  XMLByXSDValidator:130 - Changed 144 nodes
+2020-01-08 02:30:20 INFO  XMLByXSDValidator:33 - Validation succeed
+2020-01-08 02:30:20 INFO  XMLByXSDValidator:33 - Validation succeed
+2020-01-08 02:34:10 INFO  XMLByXSDValidator:130 - Changed 144 nodes
+2020-01-08 02:34:11 INFO  XMLByXSDValidator:33 - Validation succeed
+2020-01-08 02:34:11 INFO  XMLByXSDValidator:33 - Validation succeed
+2020-01-08 02:37:35 INFO  XMLByXSDValidator:130 - Changed 144 nodes
+2020-01-08 02:37:35 INFO  XMLByXSDValidator:33 - Validation succeed
+2020-01-08 02:37:36 INFO  XMLByXSDValidator:33 - Validation succeed
+2020-01-08 02:37:46 INFO  XMLByXSDValidator:130 - Changed 144 nodes
+2020-01-08 02:37:46 INFO  XMLByXSDValidator:33 - Validation succeed
+2020-01-08 02:37:46 INFO  XMLByXSDValidator:33 - Validation succeed
+2020-01-08 02:38:11 INFO  XMLByXSDValidator:130 - Changed 144 nodes
+2020-01-08 02:38:11 INFO  XMLByXSDValidator:33 - Validation succeed
+2020-01-08 02:38:11 INFO  XMLByXSDValidator:33 - Validation succeed
+2020-01-08 02:39:45 INFO  XMLByXSDValidator:130 - Changed 144 nodes
+2020-01-08 02:39:46 INFO  XMLByXSDValidator:33 - Validation succeed
+2020-01-08 02:39:46 INFO  XMLByXSDValidator:33 - Validation succeed

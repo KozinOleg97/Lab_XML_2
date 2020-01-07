@@ -1,4 +1,5 @@
 
+import Exeptions.EditErr;
 import ru.rsatu.kozin.lab.*;
 
 import javax.xml.bind.JAXBContext;
@@ -12,9 +13,7 @@ import java.util.List;
 
 public class JAXBParser {
 
-    JAXBParser(String pathFrom, String pathTo)  {
-
-
+    public JAXBParser(String pathFrom, String pathTo) throws EditErr {
 
 
         // восстанавливаем объект из XML файла
@@ -36,12 +35,12 @@ public class JAXBParser {
     private University editObj(University university) {
 
         university.setUniversityName("New Name!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
-        Administration administration =  university.getAdministration();
+        Administration administration = university.getAdministration();
         DepartmentOfScientific departmentOfScientific = administration.getDepartmentOfScientific();
         Library library = departmentOfScientific.getLibrary();
-        List<Book>  books =  library.getBook();
-        for (Book book: books){
-            System.out.println(book.getTitle()+ "  " + book.getTitle() +"  "+ book.isState());
+        List<Book> books = library.getBook();
+        for (Book book : books) {
+            System.out.println(String.format("%05d", book.getBookID()) + "  " + book.getTitle() + "  " + book.isState());
         }
         //List<Serializable> q = book.getBookIDAndTitleAndState();
 
@@ -50,33 +49,31 @@ public class JAXBParser {
 
 
     // восстанавливаем объект из XML файла
-    private University fromXmlToObject(String filePath) {
+    private University fromXmlToObject(String filePath) throws EditErr {
+        University res = null;
         try {
             // создаем объект JAXBContext
             JAXBContext jaxbContext = JAXBContext.newInstance(University.class);
             Unmarshaller un = jaxbContext.createUnmarshaller();
-
-            return (University) un.unmarshal(new File(filePath));
+            res = (University) un.unmarshal(new File(filePath));
         } catch (JAXBException e) {
-            e.printStackTrace();
+            throw new EditErr("XML Unmarshaller Error");
         }
-        return null;
+        return res;
     }
 
     // сохраняем объект в XML файл
-    private void convertObjectToXml(University university, String filePath) {
+    private void convertObjectToXml(University university, String filePath) throws EditErr {
         try {
             JAXBContext context = JAXBContext.newInstance(University.class);
             Marshaller marshaller = context.createMarshaller();
             // читабельн вывод XML в JAXB
             marshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, Boolean.TRUE);
 
-            //  объект в файл
-            //File file = new File(filePath);
-            //file.createNewFile();
+
             marshaller.marshal(university, new File(filePath));
         } catch (JAXBException e) {
-            e.printStackTrace();
+            throw new EditErr("XML Marshaller Error");
         }
     }
 }

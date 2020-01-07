@@ -1,32 +1,64 @@
+import Exeptions.EditErr;
 import org.xml.sax.Attributes;
 import org.xml.sax.SAXException;
 import org.xml.sax.helpers.DefaultHandler;
 
+import javax.xml.parsers.SAXParser;
 import javax.xml.parsers.SAXParserFactory;
 
 public class MySAXHandler extends DefaultHandler {
 
-    private String curQName, XMLPath;
-    private String name = "", surname = "", patronim = "";
-    private Integer state = 0, studentsNumb = 0;
+    private String curQName;
+    private String name = "";
+    private String surname = "";
+    private String patronim = "";
+    private Integer state = 0;
+    private Integer studentsNumb = 0;
+    private int bookState = 0;
+    private int bookNumb = 0;
 
 
     @Override
-    public void startDocument() throws SAXException {
+    public void startDocument() {
 
 
         System.out.println("Start parse XML");
     }
 
     @Override
-    public void startElement(String uri, String localName, String qName, Attributes attributes) throws SAXException {
+    public void startElement(String uri, String localName, String qName, Attributes attributes) {
 
         this.curQName = qName;
+
+        switch (qName) {
+
+            case "library":
+                bookState = 1;
+                break;
+            case "book":
+                if (bookState == 1) {
+                    bookState = 2;
+                }
+                break;
+        }
 
     }
 
     @Override
     public void endElement(String uri, String localName, String qName) throws SAXException {
+
+
+        switch (qName) {
+
+            case "library":
+                bookState = 0;
+                break;
+            case "book":
+                if (bookState == 2) {
+                    bookState = 1;
+                }
+                break;
+        }
 
 
         switch (qName) {
@@ -43,13 +75,25 @@ public class MySAXHandler extends DefaultHandler {
                 }
                 break;
         }
+
+
     }
 
     @Override
-    public void characters(char[] ch, int start, int length) throws SAXException {
+    public void characters(char[] ch, int start, int length) {
+
+        if (bookState == 2) {
+            switch (curQName) {
+                case "book":
+                    bookNumb++;
 
 
-        switch (this.curQName) {
+
+            }
+        }
+
+
+        switch (curQName) {
             case "students":
                 if (this.state == 0) {
                     this.state = 1;
@@ -81,8 +125,9 @@ public class MySAXHandler extends DefaultHandler {
 
 
     @Override
-    public void endDocument() throws SAXException {
+    public void endDocument() {
 
+        System.out.println("Overall books: " + bookNumb);
         System.out.println("End parse XML");
     }
 }

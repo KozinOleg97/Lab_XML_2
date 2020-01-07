@@ -1,3 +1,4 @@
+import Exeptions.InitErr;
 import org.apache.log4j.Logger;
 import org.xml.sax.SAXException;
 
@@ -16,9 +17,6 @@ public class XMLByXSDValidator {
     public boolean checkByXSD(String XSDpath, String XMLpath){
         try {
 
-
-
-
             SchemaFactory schemaFactory = SchemaFactory.newInstance(XMLConstants.W3C_XML_SCHEMA_NS_URI);
             Schema schema = schemaFactory.newSchema(new File(XSDpath));
             Validator validator = schema.newValidator();
@@ -26,12 +24,10 @@ public class XMLByXSDValidator {
             validator.validate(new StreamSource(new File(XMLpath)));
 
         } catch (SAXException e) {
-            System.out.println("SAX Exception! Validation failed");
-            log.error("IO Exception! Validation failed", e);
+            log.info("SAX Exception! Validation failed", e);
             return false;
         } catch (IOException e) {
-            System.out.println("IO Exception! Validation failed");
-            log.error("IO Exception! Validation failed", e);
+            log.info("IO Exception! Validation failed", e);
             return false;
         }
         log.info("Validation succeed");

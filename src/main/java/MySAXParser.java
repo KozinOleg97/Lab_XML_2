@@ -1,3 +1,5 @@
+import Exeptions.EditErr;
+import Exeptions.InitErr;
 import org.xml.sax.SAXException;
 import org.xml.sax.helpers.DefaultHandler;
 
@@ -11,36 +13,24 @@ public class MySAXParser {
 
     private SAXParser parser;
 
-    MySAXParser() {
-        try {
 
+    public void parse(String path, DefaultHandler handler) throws InitErr, EditErr {
+
+        try {
 
             SAXParserFactory factory = SAXParserFactory.newInstance();
             //factory.setXIncludeAware();
             SAXParser parser = factory.newSAXParser();
 
-            this.parser = parser;
+            parser.parse(path, handler);
 
 
-        } catch (SAXException e) {
-            e.printStackTrace();
-        } catch (ParserConfigurationException e) {
-            e.printStackTrace();
-        }
-    }
-
-
-    public void parse(String path, DefaultHandler handler) {
-
-        try {
-
-            this.parser.parse(path, handler);
-
-
-        } catch (SAXException e) {
-            e.printStackTrace();
         } catch (IOException e) {
-            e.printStackTrace();
+            throw new InitErr("SAX parse err (paths)", path);
+        } catch (ParserConfigurationException e) {
+            throw new InitErr("SAX parser config err");
+        } catch (SAXException e) {
+            throw new EditErr("SAX err");
         }
     }
 }

@@ -1,4 +1,7 @@
 //import generated.*;
+import Exeptions.DOMErr;
+import Exeptions.JAXBErr;
+import Exeptions.SAXErr;
 import org.xml.sax.SAXException;
 
 
@@ -11,25 +14,26 @@ import java.io.IOException;
 
 public class Main {
 
-    public static void main(String[] args) throws ParserConfigurationException, IOException, SAXException, JAXBException {
+    public static void main(String[] args) {
 
         LabInterface lab = new LabInterface(
                 "src/main/resources/testXML/TestXSD.xsd",
                 "src/main/resources/testXML/NewGen4.xml",
-                "src/main/resources/testXML/New_4.xml");
+                "src/main/resources/testXML/FinalEditedXML4.xml");
 
-        lab.doDOM();
+        try {
+            lab.doDOM();
 
-        lab.doValidation();
+            lab.doValidation();
 
-        lab.doSAX();
+            lab.doSAX();
 
-        lab.doJAXB("src/main/resources/testXML/NewGen4.xml", "output.xml");
+            lab.doJAXB("output.xml");
 
-        lab.doValidation("src/main/resources/testXML/TestXSD.xsd", "output.xml");
-
-
-
+            lab.doValidation("src/main/resources/testXML/TestXSD.xsd", "output.xml");
+        } catch (DOMErr | JAXBErr | SAXErr e) {
+            System.out.println(e);
+        }
 
 
     }

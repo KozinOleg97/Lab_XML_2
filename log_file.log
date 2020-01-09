@@ -666,3 +666,52 @@ ru.rsatu.Exeptions.EditErr: SAX err
 2020-01-09 20:43:17 INFO  XMLByXSDValidator:130 - Changed 144 nodes
 2020-01-09 20:43:17 INFO  XMLByXSDValidator:34 - Validation succeed
 2020-01-09 20:43:17 INFO  XMLByXSDValidator:34 - Validation succeed
+2020-01-09 20:47:02 INFO  XMLByXSDValidator:130 - Changed 144 nodes
+2020-01-09 20:47:02 INFO  XMLByXSDValidator:28 - SAX Exception! Validation failed
+org.xml.sax.SAXParseException; schema_reference.4: Failed to read schema document 'file:/E:/testXML/TestXSD.xsd', because 1) could not find the document; 2) the document could not be read; 3) the root element of the document is not <xsd:schema>.
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:203)
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.error(ErrorHandlerWrapper.java:134)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:396)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:306)
+	at com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDHandler.reportSchemaErr(XSDHandler.java:4162)
+	at com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDHandler.reportSchemaError(XSDHandler.java:4145)
+	at com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDHandler.getSchemaDocument1(XSDHandler.java:2475)
+	at com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDHandler.getSchemaDocument(XSDHandler.java:2183)
+	at com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDHandler.parseSchema(XSDHandler.java:569)
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaLoader.loadSchema(XMLSchemaLoader.java:613)
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaLoader.loadGrammar(XMLSchemaLoader.java:572)
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaLoader.loadGrammar(XMLSchemaLoader.java:538)
+	at com.sun.org.apache.xerces.internal.jaxp.validation.XMLSchemaFactory.newSchema(XMLSchemaFactory.java:255)
+	at javax.xml.validation.SchemaFactory.newSchema(SchemaFactory.java:638)
+	at javax.xml.validation.SchemaFactory.newSchema(SchemaFactory.java:654)
+	at ru.rsatu.XMLByXSDValidator.checkByXSD(XMLByXSDValidator.java:22)
+	at ru.rsatu.LabInterface.doValidation(LabInterface.java:80)
+	at ru.rsatu.Main.main(Main.java:18)
+Caused by: java.io.FileNotFoundException: E:\testXML\TestXSD.xsd (Системе не удается найти указанный путь)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at java.io.FileInputStream.<init>(FileInputStream.java:93)
+	at sun.net.www.protocol.file.FileURLConnection.connect(FileURLConnection.java:90)
+	at sun.net.www.protocol.file.FileURLConnection.getInputStream(FileURLConnection.java:188)
+	at com.sun.org.apache.xerces.internal.impl.XMLEntityManager.setupCurrentEntity(XMLEntityManager.java:623)
+	at com.sun.org.apache.xerces.internal.impl.XMLVersionDetector.determineDocVersion(XMLVersionDetector.java:189)
+	at com.sun.org.apache.xerces.internal.impl.xs.opti.SchemaParsingConfig.parse(SchemaParsingConfig.java:582)
+	at com.sun.org.apache.xerces.internal.impl.xs.opti.SchemaParsingConfig.parse(SchemaParsingConfig.java:685)
+	at com.sun.org.apache.xerces.internal.impl.xs.opti.SchemaDOMParser.parse(SchemaDOMParser.java:530)
+	at com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDHandler.getSchemaDocument(XSDHandler.java:2171)
+	... 10 more
+2020-01-09 20:47:02 INFO  XMLByXSDValidator:34 - Validation succeed
+2020-01-09 20:47:57 ERROR LabInterface:35 - DOM Init err(wrong path): /testXML/NewGen4.xml
+ru.rsatu.Exeptions.InitErr: getXML Err
+	at ru.rsatu.DOMElem.getXML(DOMElem.java:46)
+	at ru.rsatu.LabInterface.doDOM(LabInterface.java:27)
+	at ru.rsatu.Main.main(Main.java:16)
+2020-01-09 20:48:06 ERROR LabInterface:35 - DOM Init err(wrong path): /testXML/NewGen4.xml
+ru.rsatu.Exeptions.InitErr: getXML Err
+	at ru.rsatu.DOMElem.getXML(DOMElem.java:46)
+	at ru.rsatu.LabInterface.doDOM(LabInterface.java:27)
+	at ru.rsatu.Main.main(Main.java:16)
+2020-01-09 20:48:41 INFO  XMLByXSDValidator:130 - Changed 144 nodes
+2020-01-09 20:48:41 INFO  XMLByXSDValidator:34 - Validation succeed
+2020-01-09 20:48:41 INFO  XMLByXSDValidator:34 - Validation succeed

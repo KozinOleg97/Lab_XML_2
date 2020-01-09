@@ -1,4 +1,4 @@
-package Exeptions;
+package ru.rsatu.Exeptions;
 
 public class InitErr extends Exception {
 

@@ -1,4 +1,4 @@
-package Exeptions;
+package ru.rsatu.Exeptions;
 
 public class EditErr extends Exception {
 

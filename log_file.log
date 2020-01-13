@@ -715,3 +715,24 @@ ru.rsatu.Exeptions.InitErr: getXML Err
 2020-01-09 20:48:41 INFO  XMLByXSDValidator:130 - Changed 144 nodes
 2020-01-09 20:48:41 INFO  XMLByXSDValidator:34 - Validation succeed
 2020-01-09 20:48:41 INFO  XMLByXSDValidator:34 - Validation succeed
+2020-01-09 20:52:08 INFO  XMLByXSDValidator:130 - Changed 144 nodes
+2020-01-09 20:52:08 INFO  XMLByXSDValidator:34 - Validation succeed
+2020-01-09 20:52:09 INFO  XMLByXSDValidator:34 - Validation succeed
+2020-01-09 20:53:36 INFO  XMLByXSDValidator:130 - Changed 144 nodes
+2020-01-09 20:53:37 INFO  XMLByXSDValidator:34 - Validation succeed
+2020-01-09 20:53:37 INFO  XMLByXSDValidator:34 - Validation succeed
+2020-01-14 00:50:44 INFO  XMLByXSDValidator:130 - Changed 144 nodes
+2020-01-14 00:50:45 INFO  XMLByXSDValidator:34 - Validation succeed
+2020-01-14 00:50:50 INFO  XMLByXSDValidator:130 - Changed 144 nodes
+2020-01-14 00:50:50 INFO  XMLByXSDValidator:34 - Validation succeed
+2020-01-14 00:51:10 INFO  XMLByXSDValidator:130 - Changed 144 nodes
+2020-01-14 00:51:10 INFO  XMLByXSDValidator:34 - Validation succeed
+2020-01-14 00:51:29 ERROR LabInterface:70 - Edit (convert) err
+ru.rsatu.Exeptions.EditErr: XML Unmarshaller Error
+	at ru.rsatu.JAXBParser.fromXmlToObject(JAXBParser.java:62)
+	at ru.rsatu.JAXBParser.<init>(JAXBParser.java:18)
+	at ru.rsatu.LabInterface.doJAXB(LabInterface.java:68)
+	at ru.rsatu.Main.main(Main.java:22)
+2020-01-14 00:52:07 INFO  XMLByXSDValidator:130 - Changed 144 nodes
+2020-01-14 00:52:07 INFO  XMLByXSDValidator:34 - Validation succeed
+2020-01-14 00:52:07 INFO  XMLByXSDValidator:34 - Validation succeed

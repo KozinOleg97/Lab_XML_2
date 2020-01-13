@@ -33,8 +33,6 @@ gen
 hs_err_pid*
 .gitignore
 
-src/main/resources/testXML/FinalEditedXML.xml
-src/main/resources/testXML/FinalEditedXML4.xml
 
 target/
 
